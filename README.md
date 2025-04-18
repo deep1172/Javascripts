@@ -46,4 +46,16 @@
 - functions
 - objects
 
-  
+## Difference Between slice and splice in JS
+
+### slice()
+
+- Does NOT modify the original array
+- Returns a new array
+- Used to extract a portion of an array
+
+
+### splice()
+- Modifies the original array
+- Returns removed elements
+- Used to add, remove, or replace elements
