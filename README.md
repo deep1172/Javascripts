@@ -28,3 +28,22 @@
 - Console logging and debugging basics
 - Simple structure with easy-to-follow code
 
+
+## Data types in js
+
+### Primitive (7)
+- Number
+- String
+- Boolean
+- Bigint
+- Null
+- undefined
+- symbol
+
+### Non-Primitive (Reference)
+
+- Array
+- functions
+- objects
+
+  
