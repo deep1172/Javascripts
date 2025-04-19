@@ -59,3 +59,57 @@
 - Modifies the original array
 - Returns removed elements
 - Used to add, remove, or replace elements
+
+## Difference Between regular function and arrow function in JS
+
+ ###  Regular Function
+✅ Has its own this context
+
+✅ Can be used as a constructor with new
+
+✅ Supports arguments object
+
+✅ Function hoisting works (can be called before declaration if declared with function)
+
+❌ More verbose syntax
+
+### Arrow Function
+
+❌ Does not have its own this (inherits from surrounding lexical scope)
+
+❌ Cannot be used as a constructor (will throw error with new)
+
+❌ No arguments object (use rest parameters instead)
+
+❌ Not hoisted (must be declared before use)
+
+✅ Shorter, cleaner syntax — great for callbacks, array methods, etc.
+
+## Why do we use an IIFE?
+
+1. Avoid polluting the global scope
+In older JavaScript (before modules), everything defined in the top level went into the global scope.
+
+With IIFE, you can define variables inside a function that don't leak outside.
+
+2. Run code immediately
+Sometimes, you just want to run some setup logic once:
+- DB connections
+- Config setup
+- One-time calculations
+
+3. Create private variables / closures
+IIFE can help simulate private variables (before we had modules and classes).
+
+4. Used in libraries and frameworks
+Before import/export, libraries like jQuery used IIFEs to:
+
+- Encapsulate logic
+- Avoid conflicts
+- Expose only selected APIs
+
+## JS Execution context
+
+- Global Execution Context
+- Function Execution Context
+- Eval Execution Context
