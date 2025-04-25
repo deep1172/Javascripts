@@ -1,7 +1,7 @@
 variable = 10;
 foo =13;
 (() =>{
-    foo = 100;
+    foo = 150;
     console.log(variable);
     var foo = 100;
     variable = 20;
